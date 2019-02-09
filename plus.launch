@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="nodelet" type="nodelet" name="Plus3" args="standalone nodelet_tutorial_math/Plus" output="screen">
+    <param name="value" type="double" value="2.5"/>
+    <remap from="Plus3/in" to="foo"/>
+  </node>
+</launch>
